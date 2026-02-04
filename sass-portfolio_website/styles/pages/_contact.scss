@@ -1,0 +1,41 @@
+.contact {
+  padding: $spacing-lg;
+
+  h1 {
+    margin-bottom: $spacing-md;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: $spacing-md;
+    font-weight: 500;
+  }
+
+  input,
+  textarea {
+    margin-top: $spacing-sm;
+    padding: $spacing-sm;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+  }
+
+  .btn {
+    margin-top: $spacing-md;
+    @include button($primary-color);
+    border: none;
+    cursor: pointer;
+  }
+
+  @include respond(mobile) {
+    padding: $spacing-md;
+  }
+}
