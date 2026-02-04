@@ -1,0 +1,13 @@
+.hero {
+  @include flex-center;
+  flex-direction: column;
+  text-align: center;
+  padding: $spacing-lg;
+  background: linear-gradient($primary-color, $secondary-color);
+  color: white;
+
+  .btn {
+    margin-top: $spacing-md;
+    @include button($dark-color);
+  }
+}
