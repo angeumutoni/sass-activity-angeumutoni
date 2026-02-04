@@ -1,0 +1,18 @@
+header {
+  background-color: $primary-color;
+  padding: $spacing-md;
+
+  nav ul {
+    @include flex-center;
+    list-style: none;
+
+    li {
+      margin: 0 $spacing-md;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
