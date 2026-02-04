@@ -1,0 +1,30 @@
+.about {
+  padding: $spacing-lg;
+
+  h1 {
+    margin-bottom: $spacing-md;
+    color: $primary-color;
+  }
+
+  p {
+    max-width: 700px;
+    margin-bottom: $spacing-lg;
+  }
+
+  h2 {
+    margin-bottom: $spacing-sm;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: $spacing-lg;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
+
+  @include respond(mobile) {
+    padding: $spacing-md;
+  }
+}
